@@ -13,7 +13,7 @@ var body = document.querySelector('body');
 
  async function changeWeatherUI(capitalSearch) {
 	 
-	let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${capitalSearch} &appid=382baa1bb67095b007d36615ed38326a`
+	let apiURL = `api.openweathermap.org/data/2.5/weather?q=${capitalSearch} &appid=382baa1bb67095b007d36615ed38326a`
 	 let data = await fetch(apiURL).then(res=> res.json())
 	if(data.cod==200) {
 	 content.classList.remove('hide')
